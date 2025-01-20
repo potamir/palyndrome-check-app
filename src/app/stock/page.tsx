@@ -34,6 +34,7 @@ export default function Stock() {
       setQuantity("");
       setIsPopupOpen(false);
       alert(response?.data?.message);
+      // eslint-disable-next-line
     } catch (err: any) {
       alert(err?.response?.data?.message || err);
     }
